@@ -11,7 +11,7 @@ const typeDefs = gql`
         favoriteMovies:[Movie]
     }
 
-    type movie{
+    type Movie{
         id: ID!
         name: String!
         yearOfPublication:Int!
@@ -37,7 +37,7 @@ const typeDefs = gql`
         newUsername: String!
     }
 
-    type Mutations{
+    type Mutation{
         createUser(input: CreateUserInput!): User!
         updateUsername(input: UpdateUserInput!): User!
         deleteUser(id: ID!): User
@@ -52,4 +52,4 @@ const typeDefs = gql`
     }
 `
 
-module.exports = typeDefs
+module.exports = {typeDefs};
