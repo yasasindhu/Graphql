@@ -13,7 +13,7 @@ const resolvers = {
             return user;
         },
         movies: () => {
-            return MoviesList;
+            return MovieList;
         },
         movie: (parent, args) => {
             const name = args.name;
@@ -57,3 +57,5 @@ const resolvers = {
         },
     }
 }
+
+module.exports={resolvers}
